@@ -5,146 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tugas Pemweb 1</title>
 
-<!-- diperlukan css disini karna untuk mengatur alignment dan kerapihan dari tugas, css yang dipakai cuma sedikit -->
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      padding: 0;
-      text-align: left;
-      background-color: #f9f9f9;
-    }
-    img {
-      width: 50%;
-      border-radius: 10px;
-    }
-    ul {
-      text-align: left;
-      padding-left: 20px;
-    }
-    table {
-      width: 100%;
-      max-width: 700px;
-    }
-    tr {
-      height: 35px;
-    }
-    td {
-      padding: 5px;
-    }
-    td:first-child {
-        text-align: left;
-        width: 120px;
-    }
-    hr{
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>TUGAS 1 MATA KULIAH PEMWEB</h1>
-  <h3>Nama: Rafi Nazhmi Nugraha (2301303)</h2>
-  <hr>
   <div class="container">
-      <h1>Tentang Kucing</h1>
-      <img src="Kucing.jpg" alt="Gambar Kucing">
-      <p>Kucing adalah hewan peliharaan yang lucu dan menggemaskan. Mereka dikenal dengan sifatnya yang mandiri dan penuh rasa ingin tahu.</p>
-      <h2>Ciri-ciri Kucing:</h2>
-      <ul>
-          <li>Memiliki bulu yang lembut</li>
-          <li>Bersifat mandiri</li>
-          <li>Memiliki mata yang tajam</li>
-          <li>Aktif di malam hari (nokturnal)</li>
-          <li>Menyukai tempat yang hangat</li>
-      </ul>
+    <h1>Tentang Kucing</h1>
+    <img src="Kucing.jpg" alt="Gambar Kucing">
+    <p>Kucing adalah hewan peliharaan yang lucu dan menggemaskan. Mereka dikenal dengan sifatnya yang mandiri dan penuh rasa ingin tahu.</p>
+    <h2>Ciri-ciri Kucing:</h2>
+    <ul>
+      <li>Memiliki bulu yang lembut</li>
+      <li>Bersifat mandiri</li>
+      <li>Memiliki mata yang tajam</li>
+      <li>Aktif di malam hari (nokturnal)</li>
+      <li>Menyukai tempat yang hangat</li>
+    </ul>
   </div>
-  <hr>
-  <div>
-    <table border="1">
-      <tr>
-        <td colspan="3">1</td>
-        <td colspan="2" rowspan="3">2</td>
-        <td>3</td>
-        <td colspan="2" rowspan="2" >4</td>
-      </tr>
-      <tr>
-        <td colspan="3" rowspan="4">5</td>
-        <td rowspan="2">7</td>
-      </tr>
-      <tr>
-        <td rowspan="2">8</td>
-        <td rowspan="2">9</td>
-      </tr>
-      <tr>
-        <td colspan="3">6</td>
-      </tr>
-      <tr>
-        <td colspan="5">10</td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td colspan="2" rowspan="2">12</td>
-        <td colspan="2" rowspan="3">13</td>
-        <td colspan="2" rowspan="2">14</td>
-        <td>15</td>
-      </tr>
-      <tr>
-        <td rowspan="2">16</td>
-        <td rowspan="2">20</td>
-      </tr>
-      <tr>
-        <td colspan="2">17</td>
-        <td>18</td>
-        <td>19</td>
-      </tr>
-    </table>
-    <hr>
-    <h2>Halaman Registrasi</h2>
-    <form action="register.php" method="post" enctype="multipart/form-data">
-      <table>
-        <tr>
-          <td>Nama</td>
-          <td>: <input type="text" id="username" name="username" required></td>
-        </tr>
-        <tr>
-          <td>Email</td>
-          <td>: <input type="email" id="email" name="email" required></td>
-        </tr>
-        <tr>
-          <td>Password</td>
-          <td>: <input type="password" id="password" name="password" required minlength="6"></td>
-        </tr>
-        <tr>
-          <td>Konfirmasi Password</td>
-          <td>: <input type="password" id="confirm_password" name="confirm_password" required></td>
-        </tr>
-        <tr>
-          <td>Foto Profil</td>
-          <td>: <input type="file" id="photo" name="photo" accept="image/*" required></td>
-        </tr>
-        <tr>
-          <td colspan="2"><button type="submit">Daftar</button></td>
-        </tr>
-      </table>
-    </form>
 
-    <h2>Halaman Login</h2>
-    <form action="login.php" method="post">
-        <table>
-            <tr>
-                <td>Username</td>
-                <td>: <input type="text" id="login_username" name="login_username" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>: <input type="password" id="login_password" name="login_password" required></td>
-            </tr>
-            <tr>
-                <td colspan="2"><button type="submit">Login</button></td>
-            </tr>
-        </table>
-    </form>
+  <hr>
+
+  <div class="container">
+    <h2>Table Acak dengan Grid</h2>
+    <div class="grid-table">
+      <div class="grid-item" style="grid-column: span 3;">1</div>
+      <div class="grid-item" style="grid-column: span 2; grid-row: span 3;">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item" style="grid-column: span 2; grid-row: span 2;">4</div>
+      <div class="grid-item" style="grid-column: span 3; grid-row: span 4;">5</div>
+      <div class="grid-item">7</div>
+      <div class="grid-item" style="grid-row: span 2;">8</div>
+      <div class="grid-item" style="grid-row: span 2;">9</div>
+      <div class="grid-item" style="grid-column: span 3;">6</div>
+      <div class="grid-item" style="grid-column: span 5;">10</div>
+      <div class="grid-item">11</div>
+      <div class="grid-item" style="grid-column: span 2; grid-row: span 2;">12</div>
+      <div class="grid-item" style="grid-column: span 2; grid-row: span 3;">13</div>
+      <div class="grid-item" style="grid-column: span 2; grid-row: span 2;">14</div>
+      <div class="grid-item">15</div>
+      <div class="grid-item" style="grid-row: span 2;">16</div>
+      <div class="grid-item">20</div>
+      <div class="grid-item" style="grid-column: span 2;">17</div>
+      <div class="grid-item">18</div>
+      <div class="grid-item">19</div>
+    </div>
   </div>
+
+  <hr>
+
+  <h2>Halaman Registrasi</h2>
+  <form action="register.php" method="post" enctype="multipart/form-data">
+    <label for="username">Nama</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required minlength="6">
+    
+    <label for="confirm_password">Konfirmasi Password</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    
+    <label for="photo">Foto Profil</label>
+    <input type="file" id="photo" name="photo" accept="image/*" required>
+    
+    <button type="submit">Daftar</button>
+  </form>
+
+  <h2>Halaman Login</h2>
+  <form action="login.php" method="post">
+    <label for="login_username">Username</label>
+    <input type="text" id="login_username" name="login_username" required>
+    
+    <label for="login_password">Password</label>
+    <input type="password" id="login_password" name="login_password" required>
+    
+    <button type="submit">Login</button>
+  </form>
 </body>
 </html>
