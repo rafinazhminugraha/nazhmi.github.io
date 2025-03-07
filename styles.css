@@ -1,1 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
 
+/* tentang Kucing */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Grid Table */
+.grid-table {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 35px); 
+  gap: 0;
+  max-width: 700px;
+  margin: 0 auto; 
+  border: 1px solid #000; 
+  box-sizing: border-box;
+}
+.grid-item {
+  border: 1px solid #000; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.item1  { grid-column: 1 / span 3; grid-row: 1 / span 1; }
+.item2  { grid-column: 4 / span 2; grid-row: 1 / span 3; }
+.item3  { grid-column: 6 / span 1; grid-row: 1 / span 1; }
+.item4  { grid-column: 7 / span 2; grid-row: 1 / span 2; }
+.item5  { grid-column: 1 / span 3; grid-row: 2 / span 4; }
+.item7  { grid-column: 6 / span 1; grid-row: 2 / span 2; }
+.item8  { grid-column: 7 / span 1; grid-row: 3 / span 2; }
+.item9  { grid-column: 8 / span 1; grid-row: 3 / span 2; }
+.item6  { grid-column: 4 / span 3; grid-row: 4 / span 1; }
+.item10 { grid-column: 4 / span 5; grid-row: 5 / span 1; }
+.item11 { grid-column: 1 / span 1; grid-row: 6 / span 1; }
+.item12 { grid-column: 2 / span 2; grid-row: 6 / span 2; }
+.item13 { grid-column: 4 / span 2; grid-row: 6 / span 3; }
+.item14 { grid-column: 6 / span 2; grid-row: 6 / span 2; }
+.item15 { grid-column: 8 / span 1; grid-row: 6 / span 1; }
+.item16 { grid-column: 1 / span 1; grid-row: 7 / span 2; }
+.item20 { grid-column: 8 / span 1; grid-row: 7 / span 2; }
+.item17 { grid-column: 2 / span 2; grid-row: 8 / span 1; }
+.item18 { grid-column: 6 / span 1; grid-row: 8 / span 1; }
+.item19 { grid-column: 7 / span 1; grid-row: 8 / span 1; }
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+  font-weight: bold;
+  text-align: left;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
