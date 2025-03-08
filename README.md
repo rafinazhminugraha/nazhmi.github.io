@@ -1,2 +1,2 @@
 # nazhmi.github.io
-Collage assignment purpose
+For collage assignment purposes
